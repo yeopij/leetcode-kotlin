@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
  *
  * https://leetcode.com/problems/two-sum/
  */
-class Solution {
+class TwoSum {
 	fun twoSum(nums: IntArray, target: Int): IntArray {
 		val map = mutableMapOf<Int, Int>()
 
@@ -24,7 +24,7 @@ class Solution {
 }
 
 fun main() {
-	assertEquals(setOf(0, 1), Solution().twoSum(intArrayOf(2,7,11,15), 9).toSet())
-	assertEquals(setOf(1, 2), Solution().twoSum(intArrayOf(3, 2, 4), 6).toSet())
-	assertEquals(setOf(0, 1), Solution().twoSum(intArrayOf(3, 3), 6).toSet())
+	assertEquals(setOf(0, 1), TwoSum().twoSum(intArrayOf(2,7,11,15), 9).toSet())
+	assertEquals(setOf(1, 2), TwoSum().twoSum(intArrayOf(3, 2, 4), 6).toSet())
+	assertEquals(setOf(0, 1), TwoSum().twoSum(intArrayOf(3, 3), 6).toSet())
 }
